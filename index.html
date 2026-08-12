@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>❤️ Happy Birthday Tannu ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<!-- Background Music -->
+
+<body>
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Music Button -->
+<button id="musicBtn">🎵</button>
+<div id="hearts-container"></div>
+    <!-- =========================
+PASSWORD SCREEN
+========================= -->
+
+<div id="password-screen">
+
+<div class="bg-stars"></div>
+
+<div class="glass-card">
+
+<h1>❤️ A Special Surprise ❤️</h1>
+
+<p class="subtitle">
+Only For Tannu
+</p>
+
+<input
+type="password"
+id="password"
+placeholder="Enter Secret Password">
+
+<button id="unlockBtn">
+
+🔓 Unlock My Surprise
+
+</button>
+
+<p id="error"></p>
+<div id="countdown-box" style="display:none;">
+    <h2>🎁 Your Surprise Is Waiting ❤️</h2>
+
+    <p>Come back when the countdown ends...</p>
+
+    <div id="countdown">
+        <span id="days">0</span>D
+        <span id="hours">0</span>H
+        <span id="minutes">0</span>M
+        <span id="seconds">0</span>S
+    </div>
+
+    <p id="unlock-time">
+        🔐 Unlocks on 13 August at 12:01 AM
+    </p>
+</div>
+</div>
+
+</div>
+<!-- =========================
+LOADING SCREEN
+========================= -->
+
+<div id="loading-screen">
+
+<div class="bg-stars"></div>
+
+<div class="glass-card">
+
+<h2>✨ Unlocking Your Surprise ✨</h2>
+
+<p>Please wait...</p>
+
+<div class="progress">
+
+<div id="progress-bar"></div>
+
+</div>
+
+<p id="progress-text">0%</p>
+
+</div>
+
+</div>
+
+<!-- =========================
+WELCOME SCREEN
+========================= -->
+
+<div id="welcome-screen">
+
+<div class="bg-stars"></div>
+
+<div class="glass-card">
+
+<h1>
+❤️ Happy Birthday Tannu ❤️
+</h1>
+
+<p class="subtitle">
+
+Every moment with you is special...
+
+</p>
+
+<button id="startBtn">
+
+🎁 Open Your Surprise
+
+</button>
+
+</div>
+</div>
+
+
+<div id="letter-screen" style="display:none;">
+
+    <div class="bg-stars"></div>
+
+    <div class="letter-box">
+
+        <div class="envelope">💌</div>
+
+        <h1>For My Love ❤️</h1>
+
+        <p id="letter-text"></p>
+
+        <button id="nextLetter">
+            ➜ Next Surprise
+        </button>
+
+    </div>
+
+</div>
+<!-- =========================
+PHOTO GALLERY
+========================= -->
+
+<div id="gallery-screen" style="display:none;">
+
+    <div class="bg-stars"></div>
+
+    <div class="gallery-box">
+
+        <img id="gallery-image"
+             src="photo1.jpg"
+             alt="Memory">
+<div class="photo-counter" id="photoCounter">
+    1 / 4
+</div>
+<div class="gallery-dots">
+
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+
+</div>
+<div class="gallery-controls">
+    <button id="prevPhoto">⬅️ Previous</button>
+    <button id="nextPhoto">➡️ Next</button>
+</div>
+        <h2>❤️ Our Beautiful Memories ❤️</h2>
+
+        <p id="gallery-caption">
+            Every picture tells our love story...
+        </p>
+
+
+    </div>
+
+</div> 
+<div id="like-heart">❤️</div>
+<!-- =========================
+REASONS WHY I LOVE YOU
+========================= -->
+
+<div id="love-screen" style="display:none;">
+
+    <div class="bg-stars"></div>
+
+    <div class="glass-card">
+
+        <h1>❤️ Reasons Why I Love You ❤️</h1>
+
+        <h2 id="reasonTitle">Reason #1</h2>
+
+        <p id="reasonText">
+            Tumhari smile meri duniya ki sabse khoobsurat cheez hai.
+        </p>
+
+        <button id="nextReason">
+            ➜ Next Reason
+        </button>
+
+    </div>
+
+</div>
+<!-- =========================
+OUR LOVE JOURNEY
+========================= -->
+
+<div id="timeline-screen" style="display:none;">
+
+    <div class="bg-stars"></div>
+
+    <div class="glass-card">
+
+        <h1>💖 Our Love Journey 💖</h1>
+
+        <h2 id="timelineTitle">Our Beginning ❤️</h2>
+
+        <p id="timelineText">
+            Every beautiful story has a beginning... and ours became my favorite.
+        </p>
+
+        <button id="nextTimeline">
+            ➜ Continue Our Journey
+        </button>
+
+    </div>
+
+</div>
+<!-- =========================
+CHAPTER 6 - BIRTHDAY CAKE
+========================= -->
+
+<div id="cake-screen" style="display:none;">
+
+    <div class="bg-stars"></div>
+
+    <div class="cake-container">
+
+        <h1>🎂 Happy Birthday Tannu ❤️</h1>
+
+        <p class="cake-text">
+            Make a wish...<br>
+            Then blow the candles 🥰
+        </p>
+
+        <div class="cake">
+
+            <div class="candles">
+
+    <div class="candle">
+        <div class="flame" id="flame1"></div>
+    </div>
+
+    <div class="candle">
+        <div class="flame" id="flame2"></div>
+    </div>
+
+    <div class="candle">
+        <div class="flame" id="flame3"></div>
+    </div>
+
+</div>
+
+            <div class="cake-top"></div>
+            <div class="cake-middle"></div>
+            <div class="cake-bottom"></div>
+
+        </div>
+
+        <p id="blow-status">
+            🎤 Waiting for your wish...
+        </p>
+
+    </div>
+
+</div>
+    <!-- FULLSCREEN PHOTO -->
+    
+<div id="fullscreen-view">
+
+    <span id="closeFullscreen">✖</span>
+
+    <img id="fullscreen-image" src="" alt="Fullscreen Photo">
+
+<div id="fullscreen-counter">1 / 4</div>
+
+</div>
+<!-- =========================
+CHAPTER 7 - GIFT BOX
+========================= -->
+
+<div id="gift-screen" style="display:none;">
+
+    <div class="bg-stars"></div>
+
+    <div class="gift-container">
+
+        <h1>🎁 A Special Surprise For You ❤️</h1>
+
+        <p class="gift-text">
+            Tap the Gift Box
+        </p>
+
+        <div id="giftBox">
+
+            <div class="gift-lid"></div>
+
+            <div class="gift-body"></div>
+
+            <div class="gift-ribbon-v"></div>
+
+            <div class="gift-ribbon-h"></div>
+
+        </div>
+
+    </div>
+
+</div>
+  <!-- =========================
+CHAPTER 8 - OUR MEMORIES
+========================= -->
+
+
+    
+<!-- =========================
+CHAPTER 8.3 - OUR MEET MEMORIES
+========================= -->
+
+<div id="meet-screen" style="display:none;">
+
+    <div class="bg-stars"></div>
+
+    <div class="glass-card">
+
+        <h1>📸 Our Beautiful Meetings ❤️</h1>
+
+        <img id="meet-image" src="meet1.jpg" 
+            alt="Our Memory">
+        <h2 id="meet-title">
+            First Meet ❤️
+        </h2>
+
+        <p id="meet-date">
+            14 December 2024 • Cafe
+        </p>
+
+        <p id="meet-caption">
+            The day my heart found its favourite person...
+        </p>
+
+        <button id="nextMeet">
+            Next Memory ❤️
+        </button>
+
+    </div>
+
+</div>
